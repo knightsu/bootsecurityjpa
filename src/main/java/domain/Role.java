@@ -1,13 +1,30 @@
 package domain;
 
+import org.springframework.boot.autoconfigure.web.ResourceProperties;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "role")
 public class Role {
-    String Name;
+  private Long role_id;
+  private String name;
 
-    public String getName() {
-        return Name;
-    }
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  public Long getRole_id() {
+    return role_id;
+  }
 
-    public void setName(String name) {
-        Name = name;
-    }
+  public void setRole_id(Long role_id) {
+    this.role_id = role_id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
 }
