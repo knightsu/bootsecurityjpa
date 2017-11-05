@@ -1,11 +1,21 @@
 package domain;
 
+import org.springframework.boot.autoconfigure.web.ResourceProperties;
+
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "user")
 public class User {
+
   private Long user_id;
   private String username;
   private String password;
   private String email;
 
+  @Id
+  @GeneratedValue(strategy =GenerationType.AUTO)
   public Long getUser_id() {
     return user_id;
   }
