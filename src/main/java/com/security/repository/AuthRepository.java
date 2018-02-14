@@ -1,11 +1,8 @@
-package repository;
+package com.security.repository;
 
-import domain.User;
+import com.security.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
-import javax.transaction.Transactional;
-
 
 public interface AuthRepository extends JpaRepository<User, Long> {
 

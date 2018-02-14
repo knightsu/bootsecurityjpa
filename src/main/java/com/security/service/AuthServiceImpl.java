@@ -1,9 +1,9 @@
-package service;
+package com.security.service;
 
-import domain.User;
+import com.security.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.AuthRepository;
+import com.security.repository.AuthRepository;
 
 @Service
 public class AuthServiceImpl implements AuthService{

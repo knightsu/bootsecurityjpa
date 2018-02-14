@@ -1,6 +1,6 @@
-package service;
+package com.security.service;
 
-import domain.User;
+import com.security.domain.User;
 
 public interface AuthService {
     void save(User user);

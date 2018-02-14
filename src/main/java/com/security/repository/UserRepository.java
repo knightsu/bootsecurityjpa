@@ -1,13 +1,11 @@
-package repository;
+package com.security.repository;
 
-import domain.User;
+import com.security.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface UserRepository extends JpaRepository<User, String> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
     User findUserByUsername(String username);
+    User findUserByEmail(String email);
 }

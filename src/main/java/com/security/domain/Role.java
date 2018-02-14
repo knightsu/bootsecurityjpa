@@ -1,4 +1,4 @@
-package domain;
+package com.security.domain;
 
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
 
